@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     owner: "vagrant",
     group: "www-data",
     mount_options: ["dmode=775,fmode=664"]
-  config.vm.network "forwarded_port", guest: 1337, host: 8408,
+  config.vm.network "forwarded_port", guest: 1337, host: 1337,
     auto_correct: true
   config.vm.box = "base"
   config.vm.provision "shell", path: "boot.sh"
