@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     owner: "vagrant",
     group: "www-data",
     mount_options: ["dmode=775,fmode=664"]
-  config.vm.box = "base3"
+  config.vm.box = "b1"
   config.vm.provision "shell", path: "boot.sh"
   #config.vm.synced_folder "src", "/home/vagrant/"
 
