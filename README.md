@@ -29,4 +29,3 @@ Simply append to the boot.sh file
 ##password
 ```vagrant```
 
-
