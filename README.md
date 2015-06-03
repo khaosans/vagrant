@@ -20,6 +20,8 @@ Simply append to the boot.sh file
 ####bring up the vm
 
     cd vagrantenv
+    
+    mkdir home
 
     vagrant up
 
