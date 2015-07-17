@@ -10,16 +10,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  
+
   config.vm.synced_folder "home", "/home", id: "vagrant",
     owner: "vagrant",
     group: "www-data",
     mount_options: ["dmode=775,fmode=664"]
-  #config.vm.network :public_network	  
-  config.vm.network "forwarded_port", guest: 1337, host: 1337,
-    auto_correct: true
-  config.vm.network "forwarded_port", guest: 27017, host: 27017,
-    auto_corrrect: true
+  #config.vm.network :public_network
+  #config.vm.network "forwarded_port", guest: 1337, host: 1337,
+  #  auto_correct: true
+  #config.vm.network "forwarded_port", guest: 27017, host: 27017,
+  #  auto_corrrect: true
   config.vm.box = "base"
   config.vm.provision "shell", path: "boot.sh"
   #config.vm.synced_folder "src", "/home/vagrant/"
